@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 5px;
 }
 
 html {
@@ -8,7 +9,7 @@ html {
 
 section {
   border: 3px black solid;
-  width: 33.33%;
+  width: 32.2%;
   float: left;
   position: relative;
  
@@ -48,14 +49,14 @@ span {
 
 @media (min-width: 768px) and (max-width: 991px) {
   section.first {
-    width: 50%;
+    width: 45%;
   }
 
   section.second {
     width: 50%;
   }
   section.third {
-    width: 50%;
+    width: 100%;
   }
 }
 
