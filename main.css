@@ -4,25 +4,39 @@
 }
 
 html {
-  background-color: lavenderblush;
+  background-color: black;
 }
 
 section {
-  border: 3px black solid;
+  border: 3px dimgrey solid;
   width: 32.2%;
   float: left;
   position: relative;
- 
 
+  background-color: darkblue;
+}
+
+img {
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  object-fit: contain;
+}
+
+section:hover p.quote{
+  display: block;
+}
+
+p.quote {
+  display: none;
+  color:  white;
   padding: 10px;
   padding-top: 60px;
-  color: white;
-  background-color: blueviolet;
-}
-p {
   text-align: center;
 }
 
+section:hover img{
+  display: none;
+}
 h1 {
   text-align: center;
   padding-top: 5%;
@@ -34,14 +48,17 @@ section > span {
 }
 
 span p.title {
+  color:  white;
+  padding:  0px;
+  text-align: center;
   font-weight: bold;
 }
 
 span {
-  border: 2px solid black;
+  border: 2px solid dimgrey;
   position: absolute;
   width: 45%;
-  height: 40%;
+  height: fit-content;%;
   top: 0;
   bottom: 0;
   right: 0;
