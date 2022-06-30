@@ -8,7 +8,7 @@
     
   </head>
   <body>
-    <h1 id="box">TOP THREE SIDE CHARACTERS</h1>
+    <h1 id="box">GAME OF THRONES: TOP THREE SIDE CHARACTERS</h1>
       <script>
         const box = document.getElementById('box');
 
@@ -17,31 +17,46 @@
         });
 
         box.addEventListener('mouseout', function handleMouseOut() {
-          box.style.color = 'grey';
+          box.style.color = 'white';
         });
 
+        function play() {
+        var audio = document.getElementById("audio");
+        if (audio.paused)
+            audio.play();
+          else
+            audio.pause();
+      }
+
       </script>
-    <div class="container">
+    <div>
       <section class="first">
         <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lyanna-mormont-game-of-thrones-1555349295.jpeg?crop=0.571xw:0.428xh;0.152xw,0.135xh&resize=1200:*" >
-        <span><p class="title">Lyana Mormont</p></span>
+        <span><p class="title">Lyanna Mormont</p></span>
         <p class="quote">
           "I don’t plan on knitting by the fire while men fight for me. I might be small, Lord Glover, and I might be a girl, but I am every bit as much a Northerner as you."
+          
         </p>
+        
       </section>
       <section class="second">
+        <img src="https://i0.wp.com/instinctmagazine.com/wp-content/uploads/2019/04/PodrickPayne1-2019-04-29_16-46-24_593943.jpeg?fit=1200%2C600&quality=100&strip=all&ssl=1">
         <span><p class="title">Podrick</p></span>
         <p class="quote">
-          Simply Iconic
+          "Not yet."
         </p>
       </section>
 
       <section class="third">
+        <img src="https://hips.hearstapps.com/esquireuk.cdnds.net/17/32/1600x800/landscape-1502348017-gendry.jpeg?resize=1200:*">
         <span><p class="title">Gendry</p></span>
         <p class="quote">
-          Voice of an angel, athletic ability superior to any olympic cross-country runner
+          "Oh, you like picking on the little ones, do you? You know, I've been hammering an anvil these past ten years. When I hit that steel it sings. You gonna sing when I hit you?"
         </p>
       </section>
+        <input type="button" value="THEME SONG" onclick="play()">
+        <audio id="audio" src="https://www.televisiontunes.com/uploads/audio/Game%20of%20Thrones.mp3"></audio>
     </div>
+
   </body>
 </html>

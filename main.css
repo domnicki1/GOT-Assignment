@@ -5,11 +5,16 @@
 
 html {
   background-color: black;
+  background-image: url("https://www.geekgirlauthority.com/wp-content/uploads/2019/04/cq5dam.web_.1200.675-1200x640.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: -webkit-fill-available;
 }
 
 section {
   border: 3px dimgrey solid;
   width: 32.2%;
+  height:  170px;
   float: left;
   position: relative;
 
@@ -41,6 +46,7 @@ h1 {
   text-align: center;
   padding-top: 5%;
   padding-bottom: 5%;
+  color: grey;
 }
 
 section > span {
@@ -58,7 +64,7 @@ span {
   border: 2px solid dimgrey;
   position: absolute;
   width: 45%;
-  height: fit-content;%;
+  height: fit-content;
   top: 0;
   bottom: 0;
   right: 0;
@@ -66,11 +72,11 @@ span {
 
 @media (min-width: 768px) and (max-width: 991px) {
   section.first {
-    width: 45%;
+    width: 48.5%;
   }
 
   section.second {
-    width: 50%;
+    width: 48.5%;
   }
   section.third {
     width: 100%;
